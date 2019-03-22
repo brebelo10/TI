@@ -1,0 +1,95 @@
+
+#header {
+    background-color: rgb(255, 255, 255);    
+    display : table; 
+    width: 100%;  
+  }
+
+  #header-img {
+    width:calc(100% / 3);  
+    color : #cc0000;
+    display : table-cell;
+      
+    }
+
+  #header-txt {
+    width:calc(100% / 3);
+    color : #cc0000;
+    display : table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  .artigo {    
+    display : table; 
+    }
+
+    .imagem-artigo img {
+      width:60%;  
+      
+    }
+
+  .imagem-artigo {
+    display : table-cell;
+    text-align: center;
+    vertical-align: middle;
+    
+    }
+
+  .texto-artigo {    
+    display : table-cell;
+    text-align: justify;
+    vertical-align: middle;
+    width:50%;
+   }
+
+  body{
+    margin : auto;
+    padding : auto;
+
+  }
+
+  #header-space{
+    width:calc(100% / 3);  
+    color : #cc0000;
+    display : table-cell;
+  }
+
+.conteudos {
+    background-color: #cc0000;    
+    padding: 10px;
+    text-align: center;    
+    color : white;
+    
+  }
+
+  a {
+    color: white;
+  }
+  
+
+  h2 {
+    text-align: center;     
+    
+  }
+
+  h3 {
+    text-align: center;   
+     
+  }
+  .desporto1 {
+    float: left; 
+    margin: 4px;;
+  }
+   .desporto2 {
+    float: left; 
+    margin: 4px;;
+  }
+  .istec {
+    float: left; 
+    margin: 4px;;
+  }
+
+
+
+    
