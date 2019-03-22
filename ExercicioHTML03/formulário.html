@@ -1,10 +1,32 @@
 <!DOCTYPE html>
 <head>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="formulario.css" />
 	<title>formulário</title>	
 </head>
 <body>
-   
-    
+        <header id="header">
+          <h1>Formulário</h1>       
+        </header>
+    <form>
+        <fieldset style="width:400px">
+            <legend>Dados Pessoais</legend>
+                Primeiro nome:<br>
+                <input type="text" name="primeironome"> <br>
+                Ultimo nome:<br>
+                <input type="text" name="ultimonome"> <br>
+                Email:<br>
+                <input type="email" name="email"> <br>
+                Password:<br>
+                <input type="password" name="password"> <br>
+                Telemóvel:<br>
+                <input type="tel" name="telemovel" type="900000000"> <br><br>
+                    Sexo:<br>
+                    Masculino<input type="radio" name="genero" value="Masculino"> <br>
+                    Feminino<input type="radio" name="genero" value="Feminino"> <br>
+                   
+                <br><input type="submit" value="Submit"><br>
+        </fieldset>
+    </form> 
 </body>
 </html>
