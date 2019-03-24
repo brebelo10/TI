@@ -8,24 +8,28 @@
         <header id="header">
           <h1>Formulário</h1>       
         </header>
-    <form>
+    <form action="save.php" target="_blank" method="GET">
         <fieldset style="width:400px">
             <legend>Dados Pessoais</legend>
-                Primeiro nome:<br>
-                <input type="text" name="primeironome"> <br>
-                Ultimo nome:<br>
-                <input type="text" name="ultimonome"> <br>
-                Email:<br>
-                <input type="email" name="email"> <br>
-                Password:<br>
-                <input type="password" name="password"> <br>
-                Telemóvel:<br>
-                <input type="tel" name="telemovel" type="900000000"> <br><br>
-                    Sexo:<br>
-                    Masculino<input type="radio" name="genero" value="Masculino"> <br>
-                    Feminino<input type="radio" name="genero" value="Feminino"> <br>
-                   
-                <br><input type="submit" value="Submit"><br>
+                <strong>Nome: </strong> <input type="text" name="primeironome" size="40px"> <br>
+                <br>
+                <strong>Idade: </strong><br>
+                    <input type="radio" name="idade" value="Menore18">Menor de 18 <br>
+                    <input type="radio" name="idade" value="18-35">18-35 <br>
+                    <input type="radio" name="idade" value="36-48">36-48 <br>
+                    <input type="radio" name="idade" value="Maiorde48">Maior de 48 <br>
+                    <br>
+                    <strong>Profissão: </strong> <input type="text" name="Profissão" size="37px"> <br>
+                    <br>
+                    <strong>Pais: </strong> <br>
+                    <select name="pais">
+                    <option value="Portugal">Portugal</option>
+                    <option value="Espanha">Espanha</option>
+                    <option value="Itália">Itália</option>
+                    <option value="França">França</option>
+                    </select>
+                    <br>
+                <br><input type="submit" value="Enviar"><br>
         </fieldset>
     </form> 
 </body>
