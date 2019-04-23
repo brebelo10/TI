@@ -1,0 +1,76 @@
+body,
+html{
+	margin:  0; 
+	padding: 0;
+	font-size:18px;
+}
+body{
+    background-color: #000;
+	background-size:100%;
+    background-attachment:fixed;
+    }
+h1 {
+        text-align: center;     
+    }
+a, a img{
+	text-decoration:none;
+	border:none;
+}
+#image{
+	width:100%;
+	height:auto;
+}
+.principal{	
+	margin: 0 auto;
+	color: #444;
+	font-family:sans-serif;
+	background: black;
+}
+.menu{
+	width:100%;
+	margin: 0 auto;
+	display:block;
+    clear:both;
+	text-align: center;   
+	background:black;
+	position: fixed;
+}
+.rodape{
+	
+	height: 30px;
+	width:100%;
+	margin: 0 auto;
+	display:block;
+    clear:both;
+	text-align: center;   
+	background:red;
+	color: black;
+	
+
+}
+.menu ul li, 
+.menu ul{
+	margin:0;
+	padding:0;
+    list-style:none;
+    display:inline-block;
+}
+.menu ul li a{
+	display:block;
+	color:#fff;
+	padding:13px 20px;
+}
+.corpo{
+	overflow:hidden;
+	text-align: center; 
+	background:white;
+	width:100%;
+	margin: 0 auto;
+}
+.artigos, .artigos:before{
+	width:100%;
+}
+p {
+	margin: 0;
+	
+ }
