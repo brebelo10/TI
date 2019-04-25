@@ -3,85 +3,175 @@
 	<head>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="css.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<title>Rebel's</title>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<title>Rebelo's</title>
 	</head>
 	<body>
 		<div class="principal">			
 			<div class="menu">
 				<ul>
-					<li> <a href="#Rebels">Rebel' s</a> </li>
+					<li> <a href="#Rebelos">Rebelo's</a> </li>
 					<li> <a href="#Espaço">Espaço</a> </li>                    
 					<li> <a href="#Contactos">Contactos</a> </li>
 					<li> <a href="#Critica">Critica</a> </li>
 					<li> <a href="#Reservas">Reservas</a> </li>
-					
-                </ul>                				
-            </div>
+				</ul> 			
+			</div>
             
 			<div class="corpo">
 				<div class="artigos">
-					<section id='Rebels'>
-						<p>
-							<img src="imagens/01.jpg" id="image"/> 
-						</p>
-						<h1>Rebel' s</h1>		
-						<p>
-							Somos jovens, apaixonados e criativos, que trabalham sempre com prazer, com produtos frescos</p>
-						<p>
-							e de extrema qualidade, para confeccionar pratos saborosos,  </p>
-						<p>
-							mostrando uma preocupação pelo trabalho bem feito. </p>
-						<p>
-							<img src="imagens/02.jpg" id="image" />
-						</p>					
-                    </section>
+						<br>
+						<img src="imagens/01.jpg" id="image"/>
+						<br>
+						<section id='Rebelos'>
+						<h1>Rebelo's</h1>		
+						<br>
+						<br>	Somos jovens, apaixonados e criativos, que trabalham sempre com prazer, com produtos frescos
+						<br><br>
+						<br>	e de extrema qualidade, para confeccionar pratos saborosos, 
+						<br><br>
+						<br>	mostrando uma preocupação pelo trabalho bem feito.
+						<br>
+						<br>
+						<img src="imagens/02.jpg" id="image" />
+						<br>					
+          	</section>
                         
-                    <section id='Espaço'>
-                        <h1>Espaço</h1>						
-						<p>
-							A decoração minimalista e eclética composta por vários elementos convida à usabilidade e familiaridade.  						
-						</p>
-						<p>
-							Um projeto criado a partir do zero para compartilhar uma paixão pela culinária, </p>
-						<p>
-							e a importância de aproveitar uma refeição com os entes queridos.
-						</p>
-							<img src="imagens/03.jpg" id="image"/>
-							
-					</section>
+            <section id='Espaço'>
+            <h1>Espaço</h1>						
+						<br>
+						<br>	A decoração minimalista e eclética composta por vários elementos convida à usabilidade e familiaridade.  						
+						<br><br>
+						<br>	Um projeto criado a partir do zero para compartilhar uma paixão pela culinária, 
+						<br><br>
+						<br>	e a importância de aproveitar uma refeição com os entes queridos.
+						<br>
+						<br>
+						<img src="imagens/03.jpg" id="image"/>							
+						</section>
+
+					<section id='Critica'>
+							<h1>Critica</h1>		
+							<br>
+							<div class="mySlides">
+									<q>Não há outro lugar no Porto, que mesmo remotamente, consiga celebrar e elevar cozinha portuguesa como este restaurante.</q>
+									<p class="author">Matt Kramer</p>
+								</div>
+								
+								<div class="mySlides">
+									<q>O Rebelo's surpreende-nos sempre, desta vez mais do que na anterior e amanhã mais do que hoje, seguramente.</q>
+									<p class="author">Manuel Gonçalves da Silva</p>
+								</div>
+								
+								<div class="mySlides">
+									<q>...Copos irrepreensíveis, tratamento de temperaturas impecável, e uma extensa carta de vinhos com muitas coisas boas...</q>
+									<p class="author">Luis Antunes</p>
+								</div>
+								
+								<div class="dot-container">
+										<span class="dot" onclick="currentSlide(1)"></span> 
+										<span class="dot" onclick="currentSlide(2)"></span> 
+										<span class="dot" onclick="currentSlide(3)"></span> 
+									</div>
+									
+									<script>
+									var slideIndex = 0;
+									showSlides(slideIndex);
+									
+									function plusSlides(n) {
+										showSlides(slideIndex += n);
+									}
+									
+									function currentSlide(n) {
+										showSlides(slideIndex = n);
+									}
+									
+									function showSlides() {
+ 									 var i;
+ 									 var slides = document.getElementsByClassName("mySlides");
+ 									 var dots = document.getElementsByClassName("dot");
+  								 for (i = 0; i < slides.length; i++) {
+ 	   							 slides[i].style.display = "none";  
+ 									 }
+ 									 slideIndex++;
+  								 if (slideIndex > slides.length) {slideIndex = 1}    
+  								 for (i = 0; i < dots.length; i++) {
+    							 dots[i].className = dots[i].className.replace(" active", "");
+  								 }
+  								 slides[slideIndex-1].style.display = "block";  
+  								 dots[slideIndex-1].className += " active";
+  								 setTimeout(showSlides, 4000); // Change image every 2 seconds
+									 }
+									 </script>
+
+							<br>
+							<img src="imagens/05.jpg" id="image" />
+							<br>					
+						</section>
 					
 					<section id='Contactos'> 
 							<h1>Contactos</h1>
-							<p>	<i class="fa fa-phone" style="font-size:16px"></i> +351 224 357 633 &nbsp; &nbsp; &nbsp; &nbsp;	<i class="fa fa-phone" style="font-size:16px"></i> +351 917 878 543
-							</p>
-							<p> <i class="fa fa-map-marker" style="font-size:16PX"></i> Rua Dr. Alves da Veiga 142, 4000-072 Porto
-							</p>
-							<p> <i class="fa fa-clock-o" style="font-size:16px"></i> Aberto de Quarta-feira a Domingo das 12h00 às 15h00 e das 19:30h e das 22:00h
-							</p>
-							<p>
-								<img src="imagens/07.png" />
-							</p>
-							<p>
+							<br><img src="imagens/phone.png"> +351 224 357 633 &nbsp; &nbsp; &nbsp; &nbsp;	<img src="imagens/phone2.png"> +351 917 878 543
+							<br>
+							<br> <img src="imagens/loc.png"> Rua Dr. Alves da Veiga 142, 4000-072 Porto
+							<br>
+							<br> <img src="imagens/clock.png"> Aberto de Quarta-feira a Domingo das 12h00 às 15h00 e das 19:30h e das 22:00h
+							<br>
+							<br>
+							<img src="imagens/07.png" />
+							<br>
+							<br>
 							<img src="imagens/04.jpg" id="image"/>
-							</p>
-							
-						</section>
+							<br>							
+					</section>
 
 					<section id='Reservas'>
-							<h1>Reservas</h1>
-							<p>
-									
-							</p>
-							<p>
-							<img src="imagens/06.jpg" id="image" />
-							</p>
-						</section>
-					</div>					
-               	 </div>
+							<h1>Reservas</h1><br>							
+							<div class="w3-row-padding">
+									<div class="w3-third">
+									  <input class="w3-input w3-border" type="text" placeholder="Nome">
+									</div>
+									<div class="w3-third">
+									  <input class="w3-input w3-border" type="email" placeholder="Email">
+									</div>
+									<div class="w3-third">
+									  <input class="w3-input w3-border" type="phone" placeholder="Telemovel">
+									</div>
+								  </div>
+								<br><br>
+								  <div class="w3-row-padding">
+									<div class="w3-third">
+									  <input class="w3-input w3-border" type="people" placeholder="Nº Pessoas">
+									</div>
+									<div class="w3-third">
+									  <input class="w3-input w3-border" type="date" placeholder="Data">
+									</div>
+									<div class="w3-third">
+									  <input class="w3-input w3-border" type="time" placeholder="Hora">
+									</div>
+								  </div>
+								  <br><br>
+								  <div class="row">
+										<input type="submit" value="Reservar">
+									  </div>								  
+								<br>
+							<img src="imagens/06.jpg" id="image" />							
+						</section>						
+					</div>	
+
 					<div class="rodape">
-							Designed by Bruno Rebelo rrr
-					</div>
+							<div class="rodape-esquerdo">
+									© 2019 Rebelo's by Bruno Rebelo
+							</div>
+
+							<div class="rodape-direito">
+									<a href="https://www.facebook.com"><img src="imagens/face.png">
+									<a href="https://www.instagram.com"><img src="imagens/inst.png">
+									<a href="https://www.tripadvisor.com"><img src="imagens/trip.png">
+						</div>
+
+						</div>				
+          </div>
 		</div>		
 	</body>
 </html>
