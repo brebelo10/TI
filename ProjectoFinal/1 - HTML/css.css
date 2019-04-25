@@ -76,6 +76,7 @@ a, a img{
 	display:block;
 	color:#fff;
 	padding:13px 20px;
+	display:inline-block;
 }
 .corpo{
 	overflow:hidden;
@@ -88,4 +89,13 @@ a, a img{
 .artigos, .artigos:before{
 	width:100%;
 }
+
+q {
+	font-style: italic;
+}
+
+.author {
+	color: cornflowerblue;
+}
+
 
