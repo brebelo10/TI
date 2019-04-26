@@ -3,16 +3,12 @@ html{
 	margin:  0; 
 	padding: 0;
 	font-size:18px;
-	
+	font-family: courier ;	
 }
 body{
     background-color: #000;
 	background-size:100%;
-	background-attachment:fixed;
-	
-    }
-h1 {
-        text-align: center;     
+	background-attachment:fixed;	
     }
 a, a img{
 	text-decoration:none;
@@ -22,28 +18,31 @@ a, a img{
 	width:100%;
 	height:auto;
 }
+#titulo{
+	font-family: courier ;
+	font-size:44px;
+	font-weight: bold;
+}
 .principal{	
 	margin: 0 auto;
 	color: #444;
 	font-family:sans-serif;
 	background: black;	
 }
-
 .menu{
 	width:100%;
 	margin: 0 auto;
 	display:block;
     clear:both;
 	text-align: center;   
-	background:black;
-	position: fixed;	
-	font-size:22px;
+	background:black;		
+	font-size:25px;
+	font-family: courier;
+	font-weight: bold;
 }
-
 .rodape{	
 	width: 100%;
 }
-
 .rodape-esquerdo{
 	padding-left: 20px;
 	padding-top: 3px;
@@ -52,9 +51,8 @@ a, a img{
 	float: left;
 	font-size:15px;
 	color: black;
-	text-align: left;
+	text-align: left;	
 }
-
 .rodape-direito{
 	padding-right: 20px;
 	padding-top: 2px;
@@ -63,14 +61,12 @@ a, a img{
 	float: right;
 	text-align: right;	
 }
-
 .menu ul li, 
 .menu ul{
 	margin:0;
 	padding:0;
     list-style:none;
-	display:inline-block;
-}
+	display:inline-block;}
 
 .menu ul li a{
 	display:block;
@@ -83,17 +79,16 @@ a, a img{
 	text-align: center; 
 	background:white;
 	width:100%;
-	margin: 0 auto;	
-	/*margin-bottom: -23px;*/
+	margin: 0 auto;		
 }
 .artigos, .artigos:before{
 	width:100%;
+	font-family: courier ;
+	font-size:18px;
 }
-
 q {
 	font-style: italic;
 }
-
 .author {
 	color: cornflowerblue;
 }
